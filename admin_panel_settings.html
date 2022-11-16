@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: white;
+            font-size: 110%;
+        }
+
+        button:hover {
+            font-size: 120%
+        }
+
+        h2 {
+            font-family: Rasa;
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 49px;
+            letter-spacing: 0em;
+            color: #6F5896;
+            margin-left: 50px;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: Rasa;
+            font-size: 45px;
+            font-weight: 500;
+            line-height: 49px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding-bottom: 30px;
+        }
+
+        h4 {
+            font-family: Rasa;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 39px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+    </style>
+    <title>SETTINGS-WANDERER STYLIST</title>
+</head>
+
+<body>
+    <!-- header section begins-->
+    <div id="header">
+        <div id="logo">
+            <img src="logo1.jpg" alt="logo" width="45px" height="45px">
+        </div>
+        <div id="hi">
+            <h1>WANDERER <span class="s">S</span>TYLIST</h1>
+        </div>
+        <div>
+            <button id="subscribe" onclick="window.location.href='email.html';">subscribe</button>
+        </div>
+        <div>
+            <button id="email" onclick="window.location.href='contact.html';"><img src="shape.png" alt=""></button>
+        </div>
+        <div>
+            <button id="sea" onclick="window.location.href='search.html';"> <img src="search.png" alt=""></button>
+        </div>
+    </div>
+
+    <!-- header section ends -->
+    <!-- tittle bar section begins -->
+    <div id="tittleBar">
+        <span class="tittle"> <a href="beauty.html">Beauty</a></span>
+        <span class="tittle"> <a href="lifestyle.html">Lifestyle</a></span>
+        <span class="tittle"> <a href="family.html">Family</a></span>
+        <span class="tittle"> <a href="fashion.html">Fashion</a></span>
+        <span class="tittle"> <a href="index.html">Home</a></span>
+    </div>
+
+    <!-- tittle bar section ends -->
+    <h2>SETTINGS</h2>
+    <div id="setting">
+        <div id="setting_post">
+            <button id="new_post">+New Post</button>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <button id="view_blog" onclick=" window.open('index.html','_blank')">View Blog</button>
+        </div>
+        <div id="setting_section">
+            <h3>Basic</h3>
+            <h4>Title</h4>
+            <span class="descrp">Wanderer Stylist</span>
+            <h4>Description</h4>
+            <span class="descrp">The best fashion influencers to follow for sartorial inspiration</span>
+            <h4>Blog language</h4>
+            <span class="descrp">English(United Kingdom)</span>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <h3>Privacy</h3>
+            <h4>Visible to Search Engine</h4>
+            <span class="descrp">Allow search engines to find your blog</span>
+            <form action="" id="privacy">
+                <label for="on">On</label>
+                <input type="radio" name="on" id="on">
+                <label for="off">Off</label>
+                <input type="radio" name="on" id="off">
+            </form>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <h3>Publishing</h3>
+            <h4>Blog Address</h4>
+            <span class="descrp">wandererstylist.com</span>
+            <h4>Custom Domain</h4>
+            <span class="descrp">www.wandererstylist.com</span>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <h3>HTTPS</h3>
+            <h4>HTTPS Availability</h4>
+            <span class="descrp">Status: Failed - HTTPS SSL Certificate failed to be processed.
+            </span>
+            <form action="" id="http">
+                <label for="on">On</label>
+                <input type="radio" name="on" id="on">
+                <label for="off">Off</label>
+                <input type="radio" name="on" id="off">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
